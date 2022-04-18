@@ -36,21 +36,19 @@
                 <div class="logo__box">
                     <a href="#!" class="logo"><img src="../assets/icons/logo.svg" alt="logo"></a>
                 </div>
-                <div class="user-nav__input search__input">
-                    <input class="input" type="text" placeholder="Найти...">
-                    <div class="input__img">
-                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M4.83334 0.22802C7.50274 0.22802 9.66668 2.39198 9.66668 5.06136C9.66668 6.21596 9.26181 7.27596 8.58635 8.10722L11.8535 11.3745C12.0488 11.5698 12.0488 11.8863 11.8535 12.0816C11.6761 12.2591 11.3983 12.2752 11.2025 12.13L11.1465 12.0816L7.87921 8.81436C7.04794 9.48983 5.98794 9.89469 4.83334 9.89469C2.16396 9.89469 0 7.73076 0 5.06136C0 2.39198 2.16396 0.22802 4.83334 0.22802ZM4.83334 1.22802C2.71624 1.22802 1 2.94426 1 5.06136C1 7.17842 2.71624 8.89469 4.83334 8.89469C6.95041 8.89469 8.66668 7.17842 8.66668 5.06136C8.66668 2.94426 6.95041 1.22802 4.83334 1.22802Z"
-                                fill="#60676B" />
-                        </svg>
+                <div class="user-nav">
+                    <div class="nav__search">
+                        <input class="nav__input" type="text" placeholder="Найти...">
+                        <div class="nav__input-img">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.83334 0.22802C7.50274 0.22802 9.66668 2.39198 9.66668 5.06136C9.66668 6.21596 9.26181 7.27596 8.58635 8.10722L11.8535 11.3745C12.0488 11.5698 12.0488 11.8863 11.8535 12.0816C11.6761 12.2591 11.3983 12.2752 11.2025 12.13L11.1465 12.0816L7.87921 8.81436C7.04794 9.48983 5.98794 9.89469 4.83334 9.89469C2.16396 9.89469 0 7.73076 0 5.06136C0 2.39198 2.16396 0.22802 4.83334 0.22802ZM4.83334 1.22802C2.71624 1.22802 1 2.94426 1 5.06136C1 7.17842 2.71624 8.89469 4.83334 8.89469C6.95041 8.89469 8.66668 7.17842 8.66668 5.06136C8.66668 2.94426 6.95041 1.22802 4.83334 1.22802Z"
+                                    fill="#60676B" />
+                            </svg>
+                        </div>
                     </div>
-                </div>
-                <nav class="menu">
-                    <button class="menu__btn">
-                        <span></span>
-                    </button>
-                    <div class="user-nav">
+                    <div class="user-nav__items">
                         <a class="user-nav__link" href="#">
                             <span class="user-nav__title">избранное</span>
                             <img class="user-nav__link-img" src="../assets/icons/heart.svg" alt="heart icon">
@@ -64,6 +62,11 @@
                             <img class="user-nav__link-img" src="../assets/icons/user.svg" alt="user icon">
                         </a>
                     </div>
+                </div>
+                <nav class="menu">
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
                     <ul class="menu__list">
                         <li class="menu__list-item">
                             <a class="menu__list-link menu__list-link--active" href="#">Домой</a>
@@ -86,10 +89,57 @@
         </div>
     </header>
     <main class="main">
-
+        <section class="way">
+            <div class="container">
+                <h1 class="way__title">
+                    <a href="#" class="way__link">
+                        Way
+                    </a>
+                </h1>
+            </div>
+        </section>
+        <section class="collections">
+            <div class="collections__items">
+                <div class="collections__item">
+                    <a href="#!" class="collections__link">
+                        <img src="../assets/images/collection1.jpg" alt="collection img" class="collections__img">
+                    </a>
+                </div>
+                <div class="collections__item">
+                    <a href="#!" class="collections__link">
+                        <img src="../assets/images/collection2.jpg" alt="collection img" class="collections__img">
+                    </a>
+                </div>
+                <div class="collections__item">
+                    <a href="#!" class="collections__link">
+                        <img src="../assets/images/collection3.jpg" alt="collection img" class="collections__img">
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__inner">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">FAQ</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">Политика конфиденциальности</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">Публичная оферта</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">Instagram</a>
+                    </li>
+                </ul>
+                <div class="footer__copy">
+                    © 2022 WAYYOUCHOOSE. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="../js/main.js"></script>

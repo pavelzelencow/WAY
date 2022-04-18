@@ -24,6 +24,7 @@ body {
     font-family: $fontMain;
     font-weight: 300;
     font-style: normal;
+    color: $text;
     &.locked {
         overflow: hidden;
     }
@@ -42,7 +43,7 @@ body {
 }
 
 .btn {
-    background-color: $neutral;
+    background-color: $text;
     border-radius: 4px;
     color: #ffffff;
     padding: 11px 24px;
@@ -50,7 +51,7 @@ body {
     gap: 7px;
     transition: .3s all ease;
     &:hover{
-        background-color: $neutralDark;
+        background-color: $text;
         svg {
             transform: translate(5px, -5px);
             transition: .3s all ease;
@@ -60,13 +61,13 @@ body {
 
 .btn__outline {
     border-radius: 4px;
-    color: $neutral;
+    color: $text;
     padding: 11px 24px;
     display: inline-flex;
     gap: 7px;
     transition: .3s all ease;
     &:hover{
-        color: $neutralDark;
+        color: $text;
         transition: .3s all ease;
     }
 }
@@ -78,7 +79,7 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
-    color: $primery;
+    color: $text;
     @media (max-width: $breakpoint992) {
        font-size: 32px;
        line-height: 120%;
@@ -96,7 +97,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     margin-top: 15px;
-    color: $secondary;
+    color: $text;
     @media (max-width: $breakpoint480) {
         margin-top: 10px;
     }

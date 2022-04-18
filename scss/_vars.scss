@@ -9,16 +9,14 @@ $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
 
 // Colors
-$primery: #232427;
-$secondary: #5e5c6c;
-$secondaryLight: #9aa3b8;
-$neutral: #2962ef;
-$neutralDark: #091c49;
+$text: #60676B;
 $white: #ffffff;
+$gray: #CCCCCC;
+$lightgray: #979797;
 
 // Burger Menu
 $burgerBreakpoint: $breakpoint768;
-$burgerColor: $neutral;
+$burgerColor: $text;
 $burgerActiveColor: #fff;
 
 // Fonts
