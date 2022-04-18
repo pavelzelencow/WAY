@@ -1,2 +1,2 @@
 # WAY
-https://pavelzelencow.github.io/WAY/index
+https://pavelzelencow.github.io/index
