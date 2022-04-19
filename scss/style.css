@@ -633,8 +633,10 @@ body.locked {
   }
 }
 
-.user-nav__link-img {
-  display: none;
+@media (max-width: 767.98px) {
+  .user-nav__link-img {
+    display: none;
+  }
 }
 
 .user-nav .nav__search {

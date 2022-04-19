@@ -208,7 +208,9 @@
     }
     // .user-nav__link-img
     &__link-img {
-        display: none;
+        @media (max-width: $breakpoint768){
+            display: none;
+        }
     }
 
     .nav {
