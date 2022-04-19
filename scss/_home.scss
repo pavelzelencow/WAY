@@ -14,6 +14,10 @@
         align-items: center;
         flex-wrap: wrap;
         row-gap: 120px;
+        @media (max-width: $breakpoint768){
+            justify-content: center;
+            row-gap: 0px;
+         }
     }
 }
 
@@ -21,6 +25,12 @@
     // .logo__box
     &__box {
         flex: 0 1 50%;
+        @media (max-width: $breakpoint768){
+            z-index: 2;
+            margin: 0 auto;
+            flex: 0 1 auto;
+            order: 1;
+         }
     }
 }
 
@@ -28,17 +38,93 @@
     display: flex;
     // .menu__btn
     &__btn {
+        width: 26px;
+        height: 18px;
+        background: transparent;
+        position: relative;
         display: none;
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            background: $text;
+            height: 2px;
+            width: 100%;
+            left: 0;
+        }
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+        & span {
+            background: $text;
+            height: 2.5px;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 100%;
+        }
+        @media (max-width: $breakpoint768){
+           display: block;
+           transition: all .5s;
+           &.burger {
+            z-index: 2;
+            position: fixed;
+            right: 53px;
+            top: 45px;
+            &::before {
+                top: 0;
+                transform: rotate(-45deg) translate(-4px, 9px);
+                transition: all .5s;
+            }
+            &::after {
+                bottom: 0;
+                transform: rotate(45deg) translate(-2px, -8px);
+                transition: all .5s;
+            }
+            & span {
+                display: none;
+                transition: all .5s;
+            }
+           }
+        }
+        @media (max-width: $breakpoint480) {
+            &.burger {
+                right: 15px;
+            }
+        }
     }
     // .menu__list
     &__list {
         display: flex;
         flex-direction: column;
         flex: 0 1 100%;
+        @media (max-width: $breakpoint768){
+            transform: translateX(-300%);
+            position: absolute;
+            background: $white;
+            gap: 35px;
+            padding: 150px 0 0 53px;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            transition: all .5s;
+            &.active { 
+                transition: all .5s;
+                transform: translateX(0);
+            }
+        }
+        @media (max-width: $breakpoint480) {
+            padding-left: 15px;
+        }
     }
     // .menu__list-item
-    &__list-item {
-    }
+    // &__list-item {
+    // }
     // .menu__list-link
     &__list-link {
         text-transform: uppercase;
@@ -53,11 +139,9 @@
             display: none;
             transition: all .5s;
         }
-        &:hover {
-            &::before {
-                display: block;
-                transition: .5s all ease;
-            }
+        @media (max-width: $breakpoint768) {
+            font-size: 13px;
+            line-height: 18px;
         }
     }
     // .menu__list-link--active
@@ -65,8 +149,12 @@
         font-weight: 700;
         &::before {
             display: block;
+            @media (max-width: $breakpoint480) {
+                display: none;
+            }
         }
     }
+    
 }
 
 .user-nav {
@@ -74,24 +162,55 @@
     justify-content: flex-end;
     align-items: center;
     flex: 1 1 50%;
+    @media (max-width: $breakpoint768){
+        flex: 0 1 auto;
+    }
     // .user-nav__items
     &__items {
         display: flex;
         align-items: center;
         gap: 11px;
+        @media (max-width: $breakpoint768) {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            z-index: 2;
+            top: 410px;
+            left: 0;
+            padding-left: 53px;
+            align-items: baseline;
+            transform: translateX(-300%);
+            transition: all .5s;
+            &.user-nav__items--active {
+                transform: translateX(0);
+                transition: all .5s;
+            }
+        }
+        @media (max-width: $breakpoint480) {
+            padding-left: 15px;
+        }
     }
     // .user-nav__link
     &__link {
+        font-family: $fontMain;
+        color: $opacitygray;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 18px;
     }
     // .user-nav__title
     &__title {
         display: none;
-        font-size: 13px;
-        line-height: 18px;
+        @media (max-width: $breakpoint768) {
+            display: flex;
+        }
     }
     // .user-nav__link-img
     &__link-img {
+        display: none;
     }
+
     .nav {
         // .nav__search
         &__search {
@@ -106,10 +225,14 @@
             font-size: 10px;
             line-height: 14px;
             text-transform: capitalize; 
-            color: #60676B;
+            color: $text;
+            outline: $opacitygray;
             &::placeholder {
                 font-size: 10px;
                 line-height: 14px;
+            }
+            @media (max-width: $breakpoint768){
+                display: none;
             }
         }
         // .nav__input-img
@@ -124,6 +247,9 @@
     height: 100vh;
     background: url(../assets/images/way-bg.jpg) no-repeat center;
     background-size: cover;
+    @media (max-width: $breakpoint480) {
+        background-image: url(../assets/images/way-bg-mobile.jpg);
+    }
     &__title {
         display: flex;
         flex-direction: column;
@@ -146,10 +272,17 @@
     &__items {
         display: flex;
         align-items: center;
+        @media (max-width: $breakpoint768){
+            flex-wrap: wrap;
+        }
     }
     // .collections__item
-    // &__item {
-    // }
+    &__item {
+        @media (max-width: $breakpoint768) {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
     // .collections__link
     // &__link {
     // }
@@ -157,13 +290,17 @@
     &__img {
         max-width: 100%;
         object-fit: cover;
+        @media (max-width: $breakpoint768) {
+            width: 100%;
+        }
     }
 }
 
-.container {
-}
 .footer {
     padding: 100px 0 80px 0;
+    @media (max-width: $breakpoint480) {
+        padding: 40px 0 50px 0;
+    }
 		// .footer__inner
 		&__inner {
             display: flex;
@@ -175,6 +312,13 @@
             display: flex;
             justify-content: center;
             gap: 52px;
+            @media (max-width: $breakpoint768) {
+                gap: 20px;
+            }
+            @media (max-width: $breakpoint480) {
+                flex-direction: column;
+                align-items: center;
+            }
 		}
 		// .footer__item
 		// &__item {
