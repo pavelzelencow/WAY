@@ -27,15 +27,27 @@
     }
 }
 
+html,
+body {
+    height: 100%;
+}
+
 // Body Locked
 body {
+    display: flex;
+    flex-direction: column;
     font-family: $fontMain;
     font-weight: 300;
     font-style: normal;
     color: $text;
+    background-color: $menuBg;
     &.locked {
         overflow: hidden;
     }
+}
+
+.main {
+    flex-grow: 1;
 }
 
 // Animations
@@ -110,3 +122,63 @@ body {
         margin-top: 10px;
     }
 }
+
+
+.breadcrumbs{
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 26px;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        color: $opacitygray;
+        font-size: 10px;
+        line-height: 14px;
+        padding-right: 15px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '/';
+            right: 7px;
+        }
+        &:last-child{
+            color: $text;
+            pointer-events: none;
+            cursor: default;
+            &::after{
+                display: none;
+                padding-right: 0;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
+} 
+
+.wrapper {
+    max-width: 865px;
+    margin: 90px auto 0;
+    padding: 0 82px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: $breakpoint992) {
+        max-width: 508px;
+        padding: 0 60px;
+    }
+    @media (max-width: $breakpoint768) {
+        z-index: 0;
+    }
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+        padding: 0 15px;
+    }
+}
+
+.text {
+    font-size: 10px;
+    line-height: 14px;
+    color: $text;
+}
+

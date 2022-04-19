@@ -26,7 +26,7 @@
     &__box {
         flex: 0 1 50%;
         @media (max-width: $breakpoint768){
-            z-index: 2;
+            z-index: 3;
             margin: 0 auto;
             flex: 0 1 auto;
             order: 1;
@@ -71,7 +71,7 @@
            display: block;
            transition: all .5s;
            &.burger {
-            z-index: 2;
+            z-index: 3;
             position: fixed;
             right: 53px;
             top: 45px;
@@ -105,7 +105,7 @@
         @media (max-width: $breakpoint768){
             transform: translateX(-300%);
             position: absolute;
-            background: $white;
+            background: $menuBg;
             gap: 35px;
             padding: 150px 0 0 53px;
             top: 0;
@@ -116,6 +116,7 @@
             &.active { 
                 transition: all .5s;
                 transform: translateX(0);
+                z-index: 2;
             }
         }
         @media (max-width: $breakpoint480) {
@@ -168,7 +169,7 @@
     // .user-nav__items
     &__items {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         gap: 11px;
         @media (max-width: $breakpoint768) {
             position: absolute;
