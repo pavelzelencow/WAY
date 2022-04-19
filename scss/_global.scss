@@ -5,6 +5,12 @@
     margin: 0 auto;
     padding: 0 120 + px;
 
+    @media (min-width: $breakpoint1920) {
+        max-width: none;
+        margin: 0;
+        padding: 0 120px;
+    }
+
 
     @media (max-width: $breakpoint992) {
         max-width: 970px;
