@@ -11,10 +11,13 @@
         padding: 0 120px;
     }
 
+    @media (max-width: $breakpoint1280) {
+        padding: 0 90px;
+    }
 
     @media (max-width: $breakpoint992) {
         max-width: 970px;
-        padding: 0 53px;
+        padding: 0 40px;
     }
 
     @media (max-width: $breakpoint768) {
@@ -160,12 +163,11 @@ body {
 .wrapper {
     max-width: 865px;
     margin: 90px auto 0;
-    padding: 0 82px;
+    padding: 0 25px;
     position: relative;
     z-index: 1;
-    @media (max-width: $breakpoint992) {
+    @media (max-width: $breakpoint1200) {
         max-width: 508px;
-        padding: 0 60px;
     }
     @media (max-width: $breakpoint768) {
         z-index: 0;
@@ -174,6 +176,13 @@ body {
         max-width: none;
         padding: 0 15px;
     }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    color: $text;
 }
 
 .text {
