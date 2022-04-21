@@ -1,0 +1,175 @@
+// .menu {
+//     &__btn {
+//         &::after,
+//         &::before {
+//             background: $white;
+//         }
+//         & span {
+//             background: $white;
+//         }
+//     }
+//     &__list{
+//        @media (max-width: $breakpoint768){
+//             background: $blue;
+//         }    
+//     }
+      
+//     &__list-link {
+//         color: $white;
+//     }   
+// }
+
+// .user-nav {
+//     &__items {
+//         align-items: center;
+//     }
+//     &__link {
+//         color: $white;
+//     }
+// }
+
+// .nav {
+//     &__input { 
+//         color: $white;
+//         &::placeholder {
+//             color: $white;
+//         }
+//     }
+// }
+
+// .top {
+//     &__content {
+//         .menu {
+//             &__btn {
+//                 &::after,
+//                 &::before {
+//                     background: $white;
+//                 }
+//                 & span {
+//                     background: $white;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.top {
+    &__content {
+        position: relative;
+        left: 0;
+        top: 0;
+        background-image: url(../assets/images/collab/collab2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        .wrapper {
+            margin-top: 0;
+        }
+        .breadcrumbs {
+            margin-top: 90px;
+        }
+    }
+    &__content-aw {
+        background-image: url(../assets/images/collab.jpg);
+    }
+}
+
+.ss22 {
+	// .ss22__descr
+	&__descr {
+        margin-bottom: 77px;
+	}
+	// .ss22__photo
+	&__photo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        @media (max-width: $breakpoint1200) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $breakpoint480) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+	}
+    // .ss22__imgbox
+    &__imgbox {
+        max-width: 100%;
+        width: 100%;
+    }
+	// .ss22__img
+	&__img {
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        object-position: top;
+        height: 629px;
+        @media (max-width: $breakpoint768) {
+            height: 366px;
+        }
+	}
+}
+
+.way {
+	// .way__items
+	&__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px 9px;
+        margin-bottom: 100px;
+        @media (max-width: $breakpoint1200) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: $breakpoint992) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $breakpoint480) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+	}
+	// .way__item
+	// &__item {
+
+	// }
+	// .way__item-imgbox
+	&__item-imgbox {
+        position: relative;
+        &:hover {
+            transform: translateY(0);
+            transition: all .5s;
+        }
+
+	}
+	// .way__item-img
+	&__item-img {
+        @media (max-width: $breakpoint480) {
+            width: 100%;
+        }
+	}
+	// .way__item-descr
+	&__item-descr {
+        padding: 15px 19px 10px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 14px;
+	}
+	// .way__item-name
+	&__item-name {
+        text-transform: uppercase;
+	}
+	// .way__item-price
+	// &__item-price {
+
+	// }
+    // .way__wrapper-link
+    &__wrapper-link {
+        position: absolute;
+        display: flex;
+        bottom: 45px;
+        transform: translateY(300%);
+        transition: all .5s;
+    }
+    // .way__link
+    // &__link {
+    // }
+}
