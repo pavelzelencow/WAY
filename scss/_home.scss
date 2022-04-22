@@ -270,8 +270,8 @@
     }
 }
 
-.collections {
-    // .collections__items
+.range {
+    // .range__items
     &__items {
         display: flex;
         align-items: center;
@@ -283,7 +283,7 @@
             flex-wrap: wrap;
         }
     }
-    // .collections__item
+    // .range__item
     &__item {
         @media (max-width: $breakpoint768) {
             max-width: 100%;
@@ -293,10 +293,10 @@
             order: -1;
         }
     }
-    // .collections__link
+    // .range__link
     // &__link {
     // }
-    // .collections__img
+    // .range__img
     &__img {
         max-width: 100%;
         object-fit: cover;
