@@ -15,7 +15,7 @@
         flex-wrap: wrap;
         row-gap: 120px;
         @media (max-width: $breakpoint768){
-            justify-content: center;
+            justify-content: space-between;
             row-gap: 0px;
          }
     }
@@ -27,7 +27,6 @@
         flex: 0 1 50%;
         @media (max-width: $breakpoint768){
             z-index: 3;
-            margin: 0 auto;
             flex: 0 1 auto;
             order: 1;
          }
@@ -36,13 +35,17 @@
 
 .menu {
     display: flex;
+    @media (max-width: $breakpoint768) {
+        order: 1;
+    }
     // .menu__btn
     &__btn {
-        width: 26px;
-        height: 18px;
+        width: 23px;
+        height: 17px;
         background: transparent;
         position: relative;
         display: none;
+        transition: .5s all;
         &::after,
         &::before {
             position: absolute;
@@ -61,7 +64,7 @@
         }
         & span {
             background: $text;
-            height: 2.5px;
+            height: 2px;
             position: absolute;
             top: 8px;
             left: 0;
@@ -72,12 +75,9 @@
            transition: all .5s;
            &.burger {
             z-index: 3;
-            position: fixed;
-            right: 53px;
-            top: 45px;
             &::before {
                 top: 0;
-                transform: rotate(-45deg) translate(-4px, 9px);
+                transform: rotate(-45deg) translate(-3px, 9px);
                 transition: all .5s;
             }
             &::after {
@@ -112,9 +112,9 @@
             left: 0;
             right: 0;
             height: 100vh;
-            transition: all .5s;
+            transition: .5s;
             &.active { 
-                transition: all .5s;
+                transition: .5s;
                 transform: translateX(0);
                 z-index: 2;
             }
@@ -186,6 +186,7 @@
             &.user-nav__items--active {
                 transform: translateX(0);
                 transition: all .5s;
+                z-index: 3;
             }
         }
         @media (max-width: $breakpoint480) {
@@ -197,18 +198,21 @@
         font-family: $fontMain;
         color: $opacitygray;
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: 16px;
         line-height: 18px;
     }
     // .user-nav__title
     &__title {
         display: none;
+        font-size: 13px;
         @media (max-width: $breakpoint768) {
             display: flex;
         }
     }
     // .user-nav__link-img
     &__link-img {
+        font-size: 16px;
+        line-height: 18px;
         @media (max-width: $breakpoint768){
             display: none;
         }
@@ -219,28 +223,71 @@
         &__search {
             display: flex;
             align-items: center;
-            gap: 7px;
-            padding-right: 11px;
+            height: 36px;
+            border-radius: 40px;
+            padding: 10px;
+            margin-right: 12px;
+            position: relative;
+            &:hover > input {
+                width: 150px;
+                // position: absolute;
+                // bottom: -2px;
+                // width: 150px;
+                // background: #a5a5a5;
+                // border-radius: 50px;
+                // padding: 0px;
+                // display: flex;
+                // left: 0;
+            }
+            &:hover {
+                background-color: $superLightGray;
+            }
+            // &:hover > .nav__search-icon {
+            //     background-color: $superLightGray;
+            // }
         }
         // .nav__input
         &__input {
-            background: transparent;
+            // background: transparent;
+            // font-size: 10px;
+            // line-height: 14px;
+            // text-transform: capitalize; 
+            // color: $text;
+            // outline: $opacitygray;
+            width: 0;
+            border: none;
+            outline: none;
+            padding: 0;
+            background: none;
             font-size: 10px;
-            line-height: 14px;
-            text-transform: capitalize; 
+            transition: .5s ease;
+            line-height: 40px;
             color: $text;
-            outline: $opacitygray;
             &::placeholder {
                 font-size: 10px;
                 line-height: 14px;
+                padding: 10px;
             }
             @media (max-width: $breakpoint768){
-                display: none;
+                // display: none;
             }
         }
         // .nav__input-img
-        &__input-img {
-            order: -1;
+        // &__input-img {
+        //     // order: -1;
+        // }
+        &__search-icon {
+            color: $opacitygray;
+            float: right;
+            font-size: 16px;
+            border-radius: 50%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .4s;
+            cursor: pointer;
+            text-decoration: none;
         }
     }
 }
