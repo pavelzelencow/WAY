@@ -225,9 +225,8 @@
             align-items: center;
             height: 36px;
             border-radius: 40px;
-            // padding: 10px;
+            padding: 10px 0 10px 10px;
             margin-right: 12px;
-            position: relative;
             &:hover > input {
                 width: 150px;
                 // position: absolute;
@@ -281,7 +280,9 @@
             float: right;
             font-size: 16px;
             border-radius: 50%;
-            background-color: transparent;
+            background-color: $gray;
+            height: 36px;
+            width: 36px;
             display: flex;
             justify-content: center;
             align-items: center;
