@@ -44,9 +44,9 @@ body {
     font-style: normal;
     color: $text;
     background-color: $menuBg;
-    &.locked {
-        overflow: hidden;
-    }
+    // &.locked {
+    //     // overflow: hidden;
+    // }
 }
 
 .main {
