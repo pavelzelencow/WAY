@@ -759,6 +759,7 @@ body {
 .user-nav__link-img {
   font-size: 16px;
   line-height: 18px;
+  color: #A5A5A5;
 }
 
 @media (max-width: 767.98px) {

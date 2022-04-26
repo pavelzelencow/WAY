@@ -213,6 +213,7 @@
     &__link-img {
         font-size: 16px;
         line-height: 18px;
+        color: $opacitygray;
         @media (max-width: $breakpoint768){
             display: none;
         }
