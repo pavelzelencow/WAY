@@ -53,6 +53,13 @@
 //     }
 // }
 
+.header {
+    &__collab {
+        background: rgba(255, 255, 255, 0.07);
+        height: 100vh;
+    }
+}
+
 .top {
     &__content {
         position: relative;

@@ -41,7 +41,7 @@
     // .menu__btn
     &__btn {
         width: 23px;
-        height: 17px;
+        height: 16px;
         background: transparent;
         position: relative;
         display: none;
@@ -66,7 +66,7 @@
             background: $text;
             height: 2px;
             position: absolute;
-            top: 8px;
+            top: 7px;
             left: 0;
             width: 100%;
         }
@@ -171,6 +171,9 @@
         display: flex;
         align-items: flex-end;
         gap: 11px;
+        border-radius: 50px;
+        background: $gray;
+        padding: 9px;
         @media (max-width: $breakpoint768) {
             position: absolute;
             display: flex;
@@ -179,18 +182,24 @@
             z-index: 2;
             top: 410px;
             left: 0;
-            padding-left: 53px;
             align-items: baseline;
             transform: translateX(-300%);
             transition: all .5s;
+            border-radius: 0;
+            background: none;
+            padding: 0;
             &.user-nav__items--active {
+                padding-left: 53px;
                 transform: translateX(0);
                 transition: all .5s;
                 z-index: 3;
             }
         }
         @media (max-width: $breakpoint480) {
-            padding-left: 15px;
+            &.user-nav__items--active {
+                padding-left: 15px;
+            }
+           
         }
     }
     // .user-nav__link
