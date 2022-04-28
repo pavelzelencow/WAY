@@ -1,0 +1,284 @@
+.filters {
+    // .filters__content
+    &__content {
+        margin: 50px 0 43px 0;
+        border-bottom: 1px solid #C4C4C4;
+        display: flex;
+        gap: 70px;
+        @media (max-width: $breakpoint1200) {
+            gap: 30px;
+        }
+        @media (max-width: $breakpoint480) {
+            gap: 10px;
+        }
+    }
+    // .filters__button
+    &__button {
+        font-size: 10px;
+        line-height: 14px;
+        color: $text;
+        cursor: pointer;
+        padding-bottom: 9px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    // .filters-tab-active
+    .filter-tab-active {
+        font-weight: 700;
+        border-bottom: 2px solid $text;
+    }
+}
+
+
+
+.question {
+    &__title {
+        padding-bottom: 29px;
+        border-bottom: 1px solid #C4C4C4;
+    }
+    .question__item {
+        border-bottom: 1px solid #C4C4C4;
+
+        &.question__item-active {
+            .question__item-content {
+                display: block;
+            }
+
+            .line2 {
+                transform: translate(0) !important;
+                transition: .1s all ease;
+            }
+
+            .line1 {
+                opacity: 0;
+                transition: .1s all ease;
+
+            }
+        }
+
+
+        .question__item-trigger {
+            display: flex;
+            padding: 12px 0;
+            align-items: center;
+            cursor: pointer;
+
+            .question__num {
+                margin-right: 10px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.035em;
+                color: #8547C6;
+            }
+
+            .question__text {
+                text-transform: uppercase;
+                font-size: 10px;
+                line-height: 14px;
+                margin-left: 10px;
+                color: $text;
+            }
+
+            .question__img {
+                position: relative;
+                margin-left: auto;
+
+                .line1 {
+                    display: block;
+                    width: 12px;
+                    height: 2px;
+                    background: $text;
+                    border-radius: 100px;
+                }
+
+                .line2 {
+                    display: block;
+                    width: 12px;
+                    height: 2px;
+                    background: $text;
+                    margin-top: -2px;
+                    border-radius: 100px;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        .question__item-content {
+            padding-bottom: 20px;
+            display: none;
+            animation: fade .3s ease;
+
+            .content__text {
+                margin-top: 25px;
+                padding-left: 35px;
+                font-size: 10px;
+                line-height: 14px;
+                text-transform: uppercase;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+.delivery {
+        // .delivery__title
+        &__title {
+            margin-bottom: 14px;
+        }
+		// .delivery__textbox
+		&__textbox {
+            margin-top: 14px;
+		}
+		// .delivery__text
+		&__text {
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            & p:first-child {
+                margin-bottom: 7px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #C4C4C4;
+            }
+		}
+}
+
+
+.contact {
+    // .contact__title
+    &__title {
+        margin-bottom: 20px;
+    }
+    // .contact__descr
+    &__descr {
+        font-size: 10px;
+        line-height: 14px;
+        color: $text;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        margin-bottom: 87px;
+    }
+    // .contact__form
+    &__form {
+        max-width: 369px;
+        width: 100%;
+    }
+    // .contact__input-label
+    &__input-label {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 25px;
+        margin-bottom: 10px;
+        @media (max-width: $breakpoint480) {
+            gap: 20px;
+        }
+    }
+    // .contact__input
+    &__input {
+        flex: 0 1 46%;
+        background: transparent;
+        font-size: 10px;
+        line-height: 14px;
+        color: $text;
+        border-bottom: 1px solid #c4c4c4;
+        padding: 2px 2px 5px 2px;
+        &::placeholder {
+            font-size: 10px;
+            line-height: 14px;
+            color: $text;
+        }
+        @media (max-width: $breakpoint480) {
+            flex: 0 1 100%;
+        }
+    }
+    // .contact__textarea-label
+    &__textarea-label {
+        width: 100%;
+        font-size: 10px;
+        line-height: 14px;
+        color: $text;
+    }
+    // .contact__textarea
+    &__textarea {
+        width: 100%;
+        display: block;
+        background: transparent;
+        border: 1px solid #c4c4c4;
+        resize: none;
+        height: 186px;
+        margin-top: 5px;
+        padding: 5px;
+    }
+    // .contact__checkbox
+    &__checkbox {
+        display: flex;
+        width: 100%;
+        padding: 10px 0;
+        background-color: transparent;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    // .contact__checkbox-input
+    &__checkbox-input {
+        display: none;
+        &:checked + .contact__checkbox-fake::after {
+            opacity: 1;
+          }
+    }
+    // .contact__checkbox-fake
+    &__checkbox-fake {
+        width: 18px;
+        height: 18px;
+        background: transparent;
+        border: 1px solid #c4c4c4;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: transparent url(../assets/icons/before-menu-item.svg) no-repeat;
+            background-position: center;
+            opacity: 0;
+        }
+    }
+    // .contact__checkbox-text
+    &__checkbox-text {
+        font-size: 10px;
+        line-height: 14px;
+        color: $text;
+        margin-left: 15px;
+    }
+    // .contact__btn
+    &__btn {
+        border: 1px solid #c4c4c4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 122px;
+        height: 27px;
+        font-size: 10px;
+        line-height: 14px;
+        color: $text;
+    }
+}
+
+
+.filters [data-content] {
+    display: none;
+}
+.filters__active[data-content]{
+    display: block;
+}
+
