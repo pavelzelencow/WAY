@@ -1529,6 +1529,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  background: transparent;
 }
 
 .filters .filter-tab-active {
@@ -1821,6 +1822,7 @@ body {
   font-size: 10px;
   line-height: 14px;
   color: #60676B;
+  background: transparent;
 }
 
 .filters [data-content] {

@@ -22,6 +22,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        background: transparent;
     }
     // .filters-tab-active
     .filter-tab-active {
@@ -271,6 +272,7 @@
         font-size: 10px;
         line-height: 14px;
         color: $text;
+        background: transparent;
     }
 }
 
