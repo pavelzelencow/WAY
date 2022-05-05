@@ -31,7 +31,7 @@
 
     <!-- Header -->
 
-    <header class="header header__collab">
+    <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="logo__box">
@@ -43,14 +43,6 @@
                         <a class="nav__search-icon" href="##">
                             <i class="uil uil-search"></i>
                         </a>
-                        <!-- <div class="nav__input-img">
-                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.83334 0.22802C7.50274 0.22802 9.66668 2.39198 9.66668 5.06136C9.66668 6.21596 9.26181 7.27596 8.58635 8.10722L11.8535 11.3745C12.0488 11.5698 12.0488 11.8863 11.8535 12.0816C11.6761 12.2591 11.3983 12.2752 11.2025 12.13L11.1465 12.0816L7.87921 8.81436C7.04794 9.48983 5.98794 9.89469 4.83334 9.89469C2.16396 9.89469 0 7.73076 0 5.06136C0 2.39198 2.16396 0.22802 4.83334 0.22802ZM4.83334 1.22802C2.71624 1.22802 1 2.94426 1 5.06136C1 7.17842 2.71624 8.89469 4.83334 8.89469C6.95041 8.89469 8.66668 7.17842 8.66668 5.06136C8.66668 2.94426 6.95041 1.22802 4.83334 1.22802Z"
-                                    fill="#60676B" />
-                            </svg>
-                        </div> -->
                     </div>
                     <div class="user-nav__items">
                         <a class="user-nav__link" href="#">
@@ -79,13 +71,13 @@
                             <a class="menu__list-link" href="./index.html">Домой</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="./shop.html">Магазин</a>
+                            <a class="menu__list-link menu__list-link--active" href="#!">Магазин</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="./collections.html">Коллекции</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link menu__list-link--active" href="./collaboration.html">Коллаборации</a>
+                            <a class="menu__list-link" href="./collaboration.html">Коллаборации</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="./faq.html">О нас</a>
@@ -96,45 +88,65 @@
         </div>
     </header>
     <main class="main">
-        <div class="top__content top__content-aw">
-            <div class="wrapper">
-                <div class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="./index.html">
-                                Главная
-                            </a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="./collaboration.html">
-                                Коллаборации
-                            </a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#!">
-                                AW22
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="wrapper">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="./index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Магазин
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <section class="collab-ss22 ss22">
-            <div class="wrapper">
-                <div class="ss22__descr">
-                    <h5 class="ss22__title collab__title">
-                        AW22
-                    </h5>
-                    <p class="ss22__text text">
-                        Повседневная практика показывает, что дальнейшее развитие различных форм деятельности
-                        обеспечивает широкому кругу (специалистов) участие в формировании кластеризации усилий.
-                        Как уже неоднократно упомянуто, сторонники тоталитаризма в науке представляют собой не что иное,
-                        как квинтэссенцию победы маркетинга над разумом
-                        и должны быть объявлены нарушающими общечеловеческие нормы этики и морали.
-                        Также как реализация намеченных плановых заданий способствует подготовке и реализации форм
-                        воздействия.
-                    </p>
+            <form class="category">
+                <fieldset class="select">
+                    <select class="select__product" name="product" id="product" aria-placeholder="">
+                        <option value="hide" disabled selected hidden> ИЗДЕЛИЕ</option>
+                        <option value="ring">кольца</option>
+                        <option value="necklace">подвески</option>
+                        <option value="bracelet">браслеты</option>
+                        <option value="earring">сережки</option>
+                    </select>
+                    <select class="select__product" name="metal" id="metal">
+                        <option value="hide" disabled selected hidden>металл</option>
+                        <option value="gold">золото</option>
+                        <option value="silver">серебро</option>
+                        <option value="white-gold">белое золото</option>
+                        <option value="pink-gold">розовое золото</option>
+                    </select>
+                    <select class="select__product" name="stones" id="stones">
+                        <option value="hide" disabled selected hidden>камни</option>
+                            <option value="diamond">алмаз</option>
+                            <option value="emerald">изумруд</option>                    
+                            <option value="ruby">рубин</option>                   
+                            <option value="sapphire">сапфир</option>                    
+                    </select>
+                </fieldset>
+                <div class="filter">
+                    <div class="filter__interval">
+                        <label>p.<input type="text" name="min-interval" value="1000"></label>
+                        <label>p.<input type="text" name="max-interval" value="500000+"></label>
+                    </div>
+                    <div class="filter__range-wrapper">
+                        <div class="filter__range">
+                            <div class="filter__range-scale">
+                                <div class="filter__range-bar"></div>
+                            </div>
+                            <button class="filter__range-handle min"></button>
+                            <button class="filter__range-handle max" style="left: 73%;"></button>
+                        </div>
+                    </div>
                 </div>
+            </form>
+            <section class="shop">
+                <h4 class="shop__item-title title">
+                    кольца
+                </h4>
                 <div class="ss22__items way__items">
                     <div class="ss22__item way__item">
                         <div class="way__item-imgbox">
@@ -143,7 +155,7 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -173,7 +185,7 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -203,7 +215,7 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -233,7 +245,7 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -263,7 +275,7 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -293,7 +305,7 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -323,7 +335,7 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -353,7 +365,247 @@
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
                                         <i class="uil uil-arrow-from-right"></i>
-                                    </a>   
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/1.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/2.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/3.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/4.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/5.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/6.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/7.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-shopping-cart-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="way__item-descr">
+                            <p class="way__item-name">
+                                SILVER ECHMIA EAR CUFF (SINGLE - BOTH EARS)
+                            </p>
+                            <p class="way__item-price">
+                                Price£245.00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ss22__item way__item">
+                        <div class="way__item-imgbox">
+                            <img class="way__item-img" src="./assets/images/item-img/8.png" alt="item img">
+                            <div class="way__link-box">
+                                <div class="way__wrapper-link">
+                                    <a href="./shop.html" class="way__link">
+                                        <i class="uil uil-arrow-from-right"></i>
+                                    </a>
                                 </div>
                                 <div class="way__wrapper-link">
                                     <a href="./shop.html" class="way__link">
@@ -377,25 +629,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="ss22__photo">
-                <div class="ss22__imgbox">
-                     <img class="ss22__img" src="./assets/images/ss22-4.jpg" alt="aw22 img">
-                </div>
-                <div class="ss22__imgbox">
-                    <img class="ss22__img" src="./assets/images/ss22-2.jpg" alt="aw22 img">
-                </div>
-                <div class="ss22__imgbox">
-                    <img class="ss22__img" src="./assets/images/ss22-5.jpg" alt="aw22 img">
-                </div>
-                <div class="ss22__imgbox">
-                    <img class="ss22__img" src="./assets/images/ss22-6.jpg" alt="aw22 img">
-                </div>
-                <div class="ss22__imgbox">
-                    <img class="ss22__img" src="./assets/images/collection3.jpg" alt="aw22 img">
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">

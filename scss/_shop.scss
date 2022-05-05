@@ -1,0 +1,104 @@
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    @media (max-width: $breakpoint1200) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.select {
+    display: flex;
+    gap: 20px;
+    @media (max-width: $breakpoint1200) {
+       margin-bottom: 40px;
+    }
+    @media (max-width: $breakpoint480) {
+        gap: 5px;
+    }
+    // .select__product
+    &__product {
+        background-color: transparent;
+        text-transform: uppercase;
+        color: $text;
+        font-size: 10px;
+        line-height: 14px;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+
+.filter {
+    max-width: 302px;
+    width: 100%;
+    background-color: $menuBg;
+    // .filter__interval
+    &__interval {
+        display: flex;
+        justify-content: space-between;
+        & label {
+            width: 50%;
+            font-size: 10px;
+            line-height: 14px;
+            color: $text;
+        }
+        & label:last-child {
+            text-align: right;
+        }
+        & input {
+            width: 40px;
+            border: none;
+            font: inherit;
+            color: inherit;
+            text-align: left;
+            background-color: transparent;
+            outline: none;
+        }
+    }
+    // .filter__range-wrapper
+    &__range-wrapper {
+        margin-bottom: 10px;
+        padding: 10px 0;
+        border-radius: 3px;
+    }
+    // .filter__range
+    &__range {
+        position: relative;
+    }
+    // .filter__range-scale
+    &__range-scale {
+        height: 1px;
+        background-color: #b6b6b6;
+    }
+    // .filter__range-bar
+    &__range-bar {
+        height: 1px;
+        width: 75%;
+        background-color: $text;
+    }
+    // .filter__range-handle
+    &__range-handle {
+        position: absolute;
+        background: url(../assets/icons/before-menu-item.svg);
+        content: '';
+        top: 50%;
+        left: -3px;
+        transform: translateY(-52%);
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+    }
+}
+
+.shop {
+    // .shop__item-title
+    &__item-title {
+        margin-bottom: 15px;
+    }
+}
+
+
+
