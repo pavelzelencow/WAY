@@ -39,33 +39,30 @@
         padding-bottom: 29px;
         border-bottom: 1px solid #C4C4C4;
     }
+    // .question__item
     .question__item {
         border-bottom: 1px solid #C4C4C4;
-
         &.question__item-active {
             .question__item-content {
                 display: block;
             }
-
             .line2 {
                 transform: translate(0) !important;
                 transition: .1s all ease;
             }
-
             .line1 {
                 opacity: 0;
                 transition: .1s all ease;
-
             }
         }
 
-
+        // .question__item-trigger
         .question__item-trigger {
             display: flex;
             padding: 12px 0;
             align-items: center;
             cursor: pointer;
-
+            // .question__text 
             .question__text {
                 text-transform: uppercase;
                 font-size: 10px;
@@ -73,7 +70,7 @@
                 margin-left: 10px;
                 color: $text;
             }
-
+            // .question__img
             .question__img {
                 position: relative;
                 margin-left: auto;
@@ -106,7 +103,7 @@
 
             .content__text {
                 margin-top: 25px;
-                padding-left: 35px;
+                padding: 0  35px;
                 font-size: 10px;
                 line-height: 14px;
                 text-transform: uppercase;
