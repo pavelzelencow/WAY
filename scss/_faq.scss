@@ -34,47 +34,35 @@
 
 
 .question {
+    // .question__title
     &__title {
         padding-bottom: 29px;
         border-bottom: 1px solid #C4C4C4;
     }
+    // .question__item
     .question__item {
         border-bottom: 1px solid #C4C4C4;
-
         &.question__item-active {
             .question__item-content {
                 display: block;
             }
-
             .line2 {
                 transform: translate(0) !important;
                 transition: .1s all ease;
             }
-
             .line1 {
                 opacity: 0;
                 transition: .1s all ease;
-
             }
         }
 
-
+        // .question__item-trigger
         .question__item-trigger {
             display: flex;
             padding: 12px 0;
             align-items: center;
             cursor: pointer;
-
-            .question__num {
-                margin-right: 10px;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 22px;
-                letter-spacing: 0.035em;
-                color: #8547C6;
-            }
-
+            // .question__text 
             .question__text {
                 text-transform: uppercase;
                 font-size: 10px;
@@ -82,25 +70,26 @@
                 margin-left: 10px;
                 color: $text;
             }
-
+            // .question__img
             .question__img {
                 position: relative;
                 margin-left: auto;
 
                 .line1 {
                     display: block;
-                    width: 12px;
-                    height: 2px;
+                    width:15.26px;
+                    height: 0.6px;
                     background: $text;
                     border-radius: 100px;
                 }
 
                 .line2 {
                     display: block;
-                    width: 12px;
-                    height: 2px;
+                    width: 14.26px;
+                    height: 0.6px;
                     background: $text;
-                    margin-top: -2px;
+                    margin-top: -1px;
+                    margin-left: 0.5px;
                     border-radius: 100px;
                     transform: rotate(90deg);
                 }
@@ -114,7 +103,7 @@
 
             .content__text {
                 margin-top: 25px;
-                padding-left: 35px;
+                padding: 0  35px;
                 font-size: 10px;
                 line-height: 14px;
                 text-transform: uppercase;

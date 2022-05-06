@@ -68,7 +68,7 @@ body {
 .btn {
     background-color: $text;
     border-radius: 4px;
-    color: #ffffff;
+    color: $white;
     padding: 11px 24px;
     display: inline-flex;
     gap: 7px;
@@ -183,6 +183,7 @@ body {
     font-size: 10px;
     line-height: 14px;
     color: $text;
+    text-transform: uppercase;
 }
 
 .text {
