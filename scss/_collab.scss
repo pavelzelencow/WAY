@@ -80,10 +80,6 @@
             grid-template-columns: repeat(1, 1fr);
         }
 	}
-	// .way__item
-	// &__item {
-
-	// }
 	// .way__item-imgbox
 	&__item-imgbox {
         position: relative;
@@ -92,7 +88,6 @@
             bottom: 0;
             transition: all .5s;
         }
-
 	}
 	// .way__item-img
 	&__item-img {
@@ -111,9 +106,6 @@
 	&__item-name {
         text-transform: uppercase;
 	}
-	// .way__item-price
-	// &__item-price {
-	// }
     // .way__wrapper-link
     &__wrapper-link {
         display: flex;
@@ -138,7 +130,6 @@
         bottom: -100%;
         background: rgba(153, 153, 153, 0.5);
     }
-    
     // .way__link
     &__link {
         font-size: 16px;

@@ -1,14 +1,9 @@
 .collaboration {
-    // .collaboration__item
-    // &__item { 
-    // }
     // .collaboration__item-title
     &__item-title {
         margin-bottom: 32px;
     }
 }
-
-
 
 .collab {
     // .collab__items
@@ -43,7 +38,6 @@
         @media (max-width: $breakpoint480) {
             max-width: 100%;
         }
-
     }
     // .collab__descr
     &__descr {
@@ -77,7 +71,9 @@
         color: $text;
         border: 0.6px solid #CACACA;
         &:hover {
-            transform: scale(1.1);
+            background: #60676B;
+            border: 0.6px solid #60676B;
+            color: #ffffff;
             transition: all .5s;
         }
     }

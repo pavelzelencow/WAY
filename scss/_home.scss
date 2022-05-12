@@ -1,5 +1,4 @@
 // Header
-
 .header {
     position: absolute;
     top: 0;
@@ -77,12 +76,12 @@
             z-index: 3;
             &::before {
                 top: 0;
-                transform: rotate(-45deg) translate(-3px, 9px);
+                transform: rotate(-45deg) translate(-3px, 7px);
                 transition: all .5s;
             }
             &::after {
                 bottom: 0;
-                transform: rotate(45deg) translate(-2px, -8px);
+                transform: rotate(45deg) translate(-3px, -8px);
                 transition: all .5s;
             }
             & span {
@@ -123,9 +122,6 @@
             padding-left: 15px;
         }
     }
-    // .menu__list-item
-    // &__list-item {
-    // }
     // .menu__list-link
     &__list-link {
         text-transform: uppercase;
@@ -155,7 +151,6 @@
             }
         }
     }
-    
 }
 
 .user-nav {
@@ -199,7 +194,6 @@
             &.user-nav__items--active {
                 padding-left: 15px;
             }
-           
         }
     }
     // .user-nav__link
@@ -239,30 +233,13 @@
             margin-right: 12px;
             &:hover > input {
                 width: 150px;
-                // position: absolute;
-                // bottom: -2px;
-                // width: 150px;
-                // background: #a5a5a5;
-                // border-radius: 50px;
-                // padding: 0px;
-                // display: flex;
-                // left: 0;
             }
             &:hover {
                 background-color: $superLightGray;
             }
-            // &:hover > .nav__search-icon {
-            //     background-color: $superLightGray;
-            // }
         }
         // .nav__input
         &__input {
-            // background: transparent;
-            // font-size: 10px;
-            // line-height: 14px;
-            // text-transform: capitalize; 
-            // color: $text;
-            // outline: $opacitygray;
             width: 0;
             border: none;
             outline: none;
@@ -281,10 +258,7 @@
                 // display: none;
             }
         }
-        // .nav__input-img
-        // &__input-img {
-        //     // order: -1;
-        // }
+        // nav__search-icon
         &__search-icon {
             color: $opacitygray;
             float: right;
@@ -351,9 +325,6 @@
             order: -1;
         }
     }
-    // .range__link
-    // &__link {
-    // }
     // .range__img
     &__img {
         max-width: 100%;
@@ -394,9 +365,6 @@
                 align-items: center;
             }
 		}
-		// .footer__item
-		// &__item {
-		// }
 		// .footer__item-link
 		&__item-link {
             font-size: 10px;
@@ -411,5 +379,5 @@
             text-transform: lowercase;
             color: $lightgray;
 		}
-}
+    }
 

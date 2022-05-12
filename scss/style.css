@@ -157,70 +157,14 @@ body {
   background-color: #F0F0F0;
 }
 
+body.locked {
+  overflow: hidden;
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.btn {
-  background-color: #60676B;
-  border-radius: 4px;
-  color: #ffffff;
-  padding: 11px 24px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  gap: 7px;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
-}
-
-.btn:hover {
-  background-color: #60676B;
-}
-
-.btn:hover svg {
-  -webkit-transform: translate(5px, -5px);
-          transform: translate(5px, -5px);
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
-}
-
-.btn__outline {
-  border-radius: 4px;
-  color: #60676B;
-  padding: 11px 24px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  gap: 7px;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
-}
-
-.btn__outline:hover {
-  color: #60676B;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
 }
 
 .section__title {
@@ -378,8 +322,8 @@ body {
   }
   75% {
     opacity: .75;
-    -webkit-transform: scale(11);
-            transform: scale(11);
+    -webkit-transform: scale(10);
+            transform: scale(10);
   }
   100% {
     opacity: 1;
@@ -396,8 +340,8 @@ body {
   }
   75% {
     opacity: .75;
-    -webkit-transform: scale(11);
-            transform: scale(11);
+    -webkit-transform: scale(10);
+            transform: scale(10);
   }
   100% {
     opacity: 1;
@@ -559,15 +503,15 @@ body {
   }
   .menu__btn.burger::before {
     top: 0;
-    -webkit-transform: rotate(-45deg) translate(-3px, 9px);
-            transform: rotate(-45deg) translate(-3px, 9px);
+    -webkit-transform: rotate(-45deg) translate(-3px, 7px);
+            transform: rotate(-45deg) translate(-3px, 7px);
     -webkit-transition: all .5s;
     transition: all .5s;
   }
   .menu__btn.burger::after {
     bottom: 0;
-    -webkit-transform: rotate(45deg) translate(-2px, -8px);
-            transform: rotate(45deg) translate(-2px, -8px);
+    -webkit-transform: rotate(45deg) translate(-3px, -8px);
+            transform: rotate(45deg) translate(-3px, -8px);
     -webkit-transition: all .5s;
     transition: all .5s;
   }
@@ -1184,8 +1128,9 @@ body {
 }
 
 .collab__btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  background: #60676B;
+  border: 0.6px solid #60676B;
+  color: #ffffff;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
