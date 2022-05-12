@@ -44,59 +44,16 @@ body {
     font-style: normal;
     color: $text;
     background-color: $menuBg;
-    // &.locked {
-    //     // overflow: hidden;
-    // }
+    &.locked {
+        overflow: hidden;
+    }
 }
 
 .main {
     flex-grow: 1;
 }
 
-// Animations
-// Fade
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.btn {
-    background-color: $text;
-    border-radius: 4px;
-    color: $white;
-    padding: 11px 24px;
-    display: inline-flex;
-    gap: 7px;
-    transition: .3s all ease;
-    &:hover{
-        background-color: $text;
-        svg {
-            transform: translate(5px, -5px);
-            transition: .3s all ease;
-        }
-    }
-}
-
-.btn__outline {
-    border-radius: 4px;
-    color: $text;
-    padding: 11px 24px;
-    display: inline-flex;
-    gap: 7px;
-    transition: .3s all ease;
-    &:hover{
-        color: $text;
-        transition: .3s all ease;
-    }
-}
-
 // .section__title
-
 .section__title {
     font-style: normal;
     font-weight: 700;
@@ -113,7 +70,6 @@ body {
 }
 
 // .section__subtitle
-
 .section__subtitle {
     font-style: normal;
     font-weight: 400;

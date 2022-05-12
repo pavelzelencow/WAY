@@ -2,7 +2,7 @@
 @use 'sass:math';
 $containerWidth: 1440;
 $containerPadding: 120;
-$containerSidePadding: 40;//math.div($containerPadding, 2)
+$containerSidePadding: 40;
 $breakpoint1920: 1919.98 + px;
 $breakpoint1280: 1279.98 + px;
 $breakpoint1200: 1199.98 + px;
@@ -19,11 +19,6 @@ $opacitygray: #A5A5A5;
 $superLightGray: #E0E0E0;
 $menuBg: #F0F0F0;
 $blue: #8CC7EC;
-
-// Burger Menu
-$burgerBreakpoint: $breakpoint768;
-$burgerColor: $text;
-$burgerActiveColor: #fff;
 
 // Fonts
 $fontMain: 'Helvetica', sans-serif;

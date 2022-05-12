@@ -19,7 +19,7 @@
        @media (max-width: 992px) {
             flex-direction: column;
             align-items: flex-start;
-    }
+        }
     }
     // .collections__descr
     &__descr {
@@ -46,7 +46,6 @@
     // .collections__gallery
     &__gallery {
         display: grid;
-
     }
     // .collections__gallery-trash
     &__gallery-trash {
