@@ -1,0 +1,81 @@
+.collaboration {
+    // .collaboration__item-title
+    &__item-title {
+        margin-bottom: 32px;
+    }
+}
+
+.collab {
+    // .collab__items
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        @media (max-width: $breakpoint1200) {
+            gap: 57px;
+        }
+    }
+    // .collab__item
+    &__item {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        @media (max-width: $breakpoint1200) {
+            flex-direction: column;
+        }
+    }
+    // .collab__img-box
+    &__img-box {
+        max-width: 100%;
+        width: 100%;
+    }
+    // .collab__img
+    &__img {
+        object-fit: cover;
+        width: 428px;
+        object-position: top;
+        height: 255px;
+        @media (max-width: $breakpoint480) {
+            max-width: 100%;
+        }
+    }
+    // .collab__descr
+    &__descr {
+        max-width: 385px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    // .collab__descr-box
+    &__descr-box {
+        margin-bottom: 17px;
+    }
+    // .collab__title
+    &__title {
+        font-family: 'Druk Cyr', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 12px;
+    }
+    // .collab__btn
+    &__btn {
+        width: 112px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 10px;
+        line-height: 14px;
+        color: $text;
+        border: 0.6px solid #CACACA;
+        &:hover {
+            background: #60676B;
+            border: 0.6px solid #60676B;
+            color: #ffffff;
+            transition: all .5s;
+        }
+    }
+}
+

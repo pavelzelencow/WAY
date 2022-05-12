@@ -1,0 +1,108 @@
+.collections {
+    // .collections__inner
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+    // .collections__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    // .collections__descrbox
+    &__descrbox {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    // .collections__descr
+    &__descr {
+        max-width: 593px;
+        width: 100%;
+        margin-right: 20px;
+        @media (max-width: 992px) {
+            max-width: 100%;
+        }
+    }
+    // .collections__item-title
+    &__item-title {
+        margin: 25px 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    // .collections__text
+    &__text {
+        @media (max-width: 992px) {
+            margin-bottom: 25px;
+        }
+    }
+    // .collections__gallery
+    &__gallery {
+        display: grid;
+    }
+    // .collections__gallery-trash
+    &__gallery-trash {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4px;
+        & .collections__imgbox:first-child {
+            grid-column: 1 / 3;
+            grid-row: 1;
+        }
+        & .collections__img {
+            height: 430px;
+            @media (max-width: 992px) {
+                height: 270px;
+            }
+            @media (max-width: 480px) {
+                height: 170px;
+            }
+        }
+    }
+    // .collections__gallery-ss
+    &__gallery-ss {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 7px;
+        & .collections__img {
+            height: 633px;
+            @media (max-width: 992px) {
+                height: 400px;
+            }
+            @media (max-width: 480px) {
+                height: 279px;
+            }
+        }
+    }
+    // .collections__gallery-aw
+    &__gallery-aw {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        & .collections__img {
+            height: 501px;
+            @media (max-width: 992px) {
+                height: 315px;
+            }
+            @media (max-width: 480px) {
+                height: 257px;
+            }
+        }
+    } 
+    // .collections__imgbox
+    &__imgbox {
+        max-width: 100%;
+        width: 100%;
+    }
+     // .collections__img
+     &__img {
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        object-position: top;
+    }
+}

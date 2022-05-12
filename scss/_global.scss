@@ -1,0 +1,150 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120 + px;
+
+    @media (min-width: $breakpoint1920) {
+        max-width: none;
+        margin: 0;
+        padding: 0 120px;
+    }
+
+    @media (max-width: $breakpoint1280) {
+        padding: 0 90px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+        padding: 0 40px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+        padding: 0 15px;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+// Body Locked
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: $fontMain;
+    font-weight: 300;
+    font-style: normal;
+    color: $text;
+    background-color: $menuBg;
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+.main {
+    flex-grow: 1;
+}
+
+// .section__title
+.section__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: $text;
+    @media (max-width: $breakpoint992) {
+       font-size: 32px;
+       line-height: 120%;
+    }
+    @media (max-width: $breakpoint480) {
+       font-style: 26px;
+    }
+}
+
+// .section__subtitle
+.section__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 15px;
+    color: $text;
+    @media (max-width: $breakpoint480) {
+        margin-top: 10px;
+    }
+}
+
+
+.breadcrumbs{
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 26px;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        color: $opacitygray;
+        font-size: 10px;
+        line-height: 14px;
+        padding-right: 15px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '/';
+            right: 7px;
+        }
+        &:last-child{
+            color: $text;
+            pointer-events: none;
+            cursor: default;
+            &::after{
+                display: none;
+                padding-right: 0;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
+} 
+
+.wrapper {
+    max-width: 865px;
+    margin: 90px auto 0;
+    padding: 0 25px;
+    position: relative;
+    z-index: 1;
+    @media (max-width: $breakpoint1200) {
+        max-width: 508px;
+    }
+    @media (max-width: $breakpoint768) {
+        z-index: 0;
+    }
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+        padding: 0 15px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    color: $text;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 10px;
+    line-height: 14px;
+    color: $text;
+}
+
